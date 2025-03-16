@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
                 className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors"
               >
                 <Mail className="w-5 h-5" />
-                <span>contact@garvitrajput.com</span>
+                <span>garvitrajput62@gmail.com</span>
               </a>
               
               <a 
@@ -36,12 +36,12 @@ const Footer: React.FC = () => {
                 className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                <span>+91 98765 43210</span>
+                <span>+91 8700035552</span>
               </a>
               
               <div className="flex items-center gap-3 text-gray-300">
                 <MapPin className="w-5 h-5" />
-                <span>Mumbai, India</span>
+                <span>Faridabad, India</span>
               </div>
             </div>
             
