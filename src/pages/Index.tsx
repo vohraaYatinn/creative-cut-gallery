@@ -3,6 +3,8 @@ import React, { useEffect } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import VideoPortfolio from "@/components/VideoPortfolio";
+import Testimonials from "@/components/Testimonials";
+import Clients from "@/components/Clients";
 import About from "@/components/About";
 import Footer from "@/components/Footer";
 
@@ -32,11 +34,13 @@ const Index: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-black text-white">
       <Header />
       <main>
         <Hero />
+        <Clients />
         <VideoPortfolio />
+        <Testimonials />
         <About />
       </main>
       <Footer />

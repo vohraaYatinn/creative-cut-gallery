@@ -1,7 +1,8 @@
 
 import React, { useEffect, useRef, useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
+import { Button } from "./ui/button";
 
 const Hero: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -28,11 +29,11 @@ const Hero: React.FC = () => {
   return (
     <section 
       id="hero" 
-      className="relative h-screen w-full overflow-hidden flex items-center justify-center"
+      className="relative h-screen w-full overflow-hidden flex items-center"
     >
-      {/* Video Background */}
+      {/* Background */}
       <div className="absolute inset-0 w-full h-full bg-black">
-        <div className="absolute inset-0 bg-black/40 z-10"></div>
+        <div className="absolute inset-0 bg-black/70 z-10"></div>
         <video
           ref={videoRef}
           autoPlay
@@ -53,36 +54,41 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-20 text-center max-w-4xl px-4 md:px-8">
-        <AnimatedSection animation="fade-in" delay={300}>
-          <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-4 tracking-tight">
-            Crafting Visual Stories
-          </h1>
-        </AnimatedSection>
+      <div className="relative z-20 max-w-7xl mx-auto px-4 md:px-8 w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="lg:max-w-xl">
+          <AnimatedSection animation="fade-in" delay={300}>
+            <h1 className="text-white text-5xl md:text-6xl lg:text-7xl font-display font-bold mb-6 tracking-tighter">
+              Garvit Rajput
+            </h1>
+          </AnimatedSection>
+          
+          <AnimatedSection animation="fade-in" delay={600}>
+            <p className="text-white/90 text-lg md:text-xl mb-8 leading-relaxed">
+              Professional video editor with a passion for visual storytelling. Creating cinematic experiences that captivate and engage audiences.
+            </p>
+          </AnimatedSection>
+          
+          <AnimatedSection animation="fade-in" delay={900}>
+            <Button 
+              onClick={scrollToWork}
+              className="bg-[#65B741] hover:bg-[#65B741]/90 text-white px-8 py-6 rounded-sm text-lg font-medium"
+            >
+              Let's get started <ArrowRight className="ml-2" />
+            </Button>
+          </AnimatedSection>
+        </div>
         
-        <AnimatedSection animation="fade-in" delay={600}>
-          <p className="text-white/90 text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed font-light text-balance">
-            Professional video editor with an eye for detail and passion for storytelling through cinematography
-          </p>
-        </AnimatedSection>
-        
-        <AnimatedSection animation="fade-in" delay={900}>
-          <button 
-            onClick={scrollToWork}
-            className="inline-flex items-center gap-2 text-white border border-white/30 rounded-full px-6 py-3 button-hover hover:bg-white/10 transition-all duration-300"
-          >
-            View Work
-          </button>
-        </AnimatedSection>
-      </div>
-
-      {/* Scroll Down Indicator */}
-      <div 
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 text-white flex flex-col items-center cursor-pointer animate-pulse"
-        onClick={scrollToWork}
-      >
-        <span className="text-sm mb-2 opacity-80">Scroll</span>
-        <ChevronDown className="w-6 h-6" />
+        <div className="hidden lg:flex justify-end">
+          <AnimatedSection animation="fade-in" delay={600}>
+            <div className="relative w-[450px] h-[450px] rounded-full overflow-hidden border-4 border-white/20">
+              <img 
+                src="https://images.unsplash.com/photo-1580679420795-1c5c1cbef47e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" 
+                alt="Garvit Rajput" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </AnimatedSection>
+        </div>
       </div>
     </section>
   );
