@@ -82,7 +82,7 @@ const Hero: React.FC = () => {
           <AnimatedSection animation="fade-in" delay={600}>
             <div className="relative w-[450px] h-[450px] rounded-full overflow-hidden border-4 border-white/20">
               <img 
-                src="https://images.unsplash.com/photo-1580679420795-1c5c1cbef47e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" 
+                src="https://cdn.mos.cms.futurecdn.net/NJGhpXg8vYRxHADWvpmyV6.jpg" 
                 alt="Garvit Rajput" 
                 className="w-full h-full object-cover"
               />

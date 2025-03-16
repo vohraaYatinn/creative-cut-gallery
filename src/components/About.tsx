@@ -2,6 +2,7 @@
 import React from "react";
 import AnimatedSection from "./AnimatedSection";
 import { GraduationCap, Film, Briefcase, Award } from "lucide-react";
+import image from "../images/image.jpeg"
 
 const About: React.FC = () => {
   const skills = [
@@ -27,8 +28,11 @@ const About: React.FC = () => {
               <div className="absolute -bottom-6 -right-6 w-20 h-20 bg-[#65B741]/20 rounded-lg -z-10"></div>
               <div className="relative overflow-hidden rounded-lg shadow-xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1580679420795-1c5c1cbef47e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" 
+                  src={image}
                   alt="Garvit Rajput" 
+                  style={{
+                    maxHeight:"45rem"
+                  }}
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />

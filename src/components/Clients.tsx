@@ -1,28 +1,33 @@
 
 import React from "react";
 import AnimatedSection from "./AnimatedSection";
+import logo1 from "../images/logo1.png";
+import logo2 from "../images/logo2.png";
+import logo3 from "../images/logo3.png";
+import logo4 from "../images/logo4.png";
+import logo5 from "../images/logo5.png";
 
 const Clients: React.FC = () => {
   const clients = [
     {
       name: "Brand 1",
-      logo: "https://dummyimage.com/200x80/4A4A4A/ffffff&text=Brand+1"
+      logo: logo1
     },
     {
       name: "Brand 2",
-      logo: "https://dummyimage.com/200x80/4A4A4A/ffffff&text=Brand+2"
+      logo: logo2
     },
     {
       name: "Brand 3",
-      logo: "https://dummyimage.com/200x80/4A4A4A/ffffff&text=Brand+3"
+      logo: logo3
     },
     {
       name: "Brand 4",
-      logo: "https://dummyimage.com/200x80/4A4A4A/ffffff&text=Brand+4"
+      logo: logo4
     },
     {
       name: "Brand 5",
-      logo: "https://dummyimage.com/200x80/4A4A4A/ffffff&text=Brand+5"
+      logo: logo5
     }
   ];
 

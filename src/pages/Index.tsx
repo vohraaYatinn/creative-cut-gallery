@@ -38,7 +38,7 @@ const Index: React.FC = () => {
       <Header />
       <main>
         <Hero />
-        <Clients />
+        {/* <Clients /> */}
         <VideoPortfolio />
         <Testimonials />
         <About />
