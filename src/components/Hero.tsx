@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
           }}
           onCanPlay={() => setIsLoaded(true)}
         >
-          <source src="https://assets.mixkit.co/videos/preview/mixkit-filming-a-woman-in-a-studio-set-42675-large.mp4" type="video/mp4" />
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-32809-large.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

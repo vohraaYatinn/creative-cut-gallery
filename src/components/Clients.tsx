@@ -5,24 +5,24 @@ import AnimatedSection from "./AnimatedSection";
 const Clients: React.FC = () => {
   const clients = [
     {
-      name: "Netflix",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
+      name: "Brand 1",
+      logo: "https://dummyimage.com/200x80/4A4A4A/ffffff&text=Brand+1"
     },
     {
-      name: "Amazon Prime Video",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Amazon_Prime_Video_logo.svg/2560px-Amazon_Prime_Video_logo.svg.png"
+      name: "Brand 2",
+      logo: "https://dummyimage.com/200x80/4A4A4A/ffffff&text=Brand+2"
     },
     {
-      name: "Warner Bros",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Warner_Bros_logo.svg/1200px-Warner_Bros_logo.svg.png"
+      name: "Brand 3",
+      logo: "https://dummyimage.com/200x80/4A4A4A/ffffff&text=Brand+3"
     },
     {
-      name: "Sony Pictures",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Sony_Pictures_Television_logo.svg/2560px-Sony_Pictures_Television_logo.svg.png"
+      name: "Brand 4",
+      logo: "https://dummyimage.com/200x80/4A4A4A/ffffff&text=Brand+4"
     },
     {
-      name: "Disney+",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Disney%2B_logo.svg/2560px-Disney%2B_logo.svg.png"
+      name: "Brand 5",
+      logo: "https://dummyimage.com/200x80/4A4A4A/ffffff&text=Brand+5"
     }
   ];
 
@@ -38,7 +38,7 @@ const Clients: React.FC = () => {
                 <img 
                   src={client.logo} 
                   alt={client.name}
-                  className="max-h-12 opacity-60 hover:opacity-100 transition-opacity duration-300 object-contain"
+                  className="max-h-12 opacity-60 hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
             ))}
